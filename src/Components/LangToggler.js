@@ -6,10 +6,24 @@ const LangToggler = () => {
   return (
     <button
       onClick={() => {
-        setLang(lang === "en" ? "hn" : "en");
+        setLang(
+          lang === "en"
+            ? "hn"
+            : lang === "hn"
+            ? "sn"
+            : lang === "sn"
+            ? "en"
+            : "hn"
+        );
       }}
     >
-      {lang === "en" ? "हिन्दी" : "English"}
+      {lang === "en"
+        ? "हिन्दी"
+        : lang === "hn"
+        ? "Spanish"
+        : lang === "sn"
+        ? "English"
+        : "Hindi"}
     </button>
   );
 };

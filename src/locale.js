@@ -12,5 +12,11 @@ const locale = {
     wellBeing: "आप कैसे हैं",
     gratitude: "धन्यवाद",
   },
+  sn: {
+    heading: "cambiador de idioma",
+    greet: "saludar",
+    wellBeing: "cómo estás",
+    gratitude: "gracias",
+  },
 };
 export default locale;
